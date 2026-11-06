@@ -14,7 +14,7 @@
       imagesrcset="assets/img/hero/pintura-predial-mobile-480.webp 480w, assets/img/hero/pintura-predial-mobile-760.webp 760w" imagesizes="100vw">
 <link rel="preload" as="image" type="image/webp" media="(min-width: 768px)"
       imagesrcset="assets/img/hero/pintura-predial-desktop-800.webp 800w, assets/img/hero/pintura-predial-desktop-1120.webp 1120w" imagesizes="62vw">
-<link rel="stylesheet" href="assets/css/style.css?v=31">
+<link rel="stylesheet" href="assets/css/style.css?v=32">
 <script src="assets/js/main.js?v=10" defer></script>
 </head>
 <body>
@@ -338,6 +338,13 @@
   <!-- S9 · CTA final: um botão por serviço, cada um com a mensagem própria (sem mensagem genérica).
        Card de serviço do design system (.card-lip: ícone em círculo, borda teal). -->
   <section class="sec sec-dark cta-final" id="contato" aria-labelledby="contato-title">
+    <!-- Mesma onda do hero, espelhada: a cor das Dúvidas desce em curva sobre o fundo escuro -->
+    <div class="sec-wave-top" aria-hidden="true">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none" focusable="false">
+        <path class="w-back" d="M0 44C220 86 470 92 720 66C980 40 1220 14 1440 30V100H0Z"/>
+        <path class="w-front" d="M0 62C250 100 500 102 760 78C1010 54 1230 34 1440 48V100H0Z"/>
+      </svg>
+    </div>
     <div class="wrap">
       <div class="cta-head">
         <h2 class="h2 rv" id="contato-title">Qual serviço <span class="t">você precisa?</span></h2>

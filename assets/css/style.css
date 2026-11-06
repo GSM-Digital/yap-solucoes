@@ -146,11 +146,14 @@ body.menu-open{overflow:hidden}
 
 .hero-scroll{display:none}
 /* Divisão ondulada no fim do hero (suave, contínua). --wave-fill = cor da seção seguinte (S3, fundo claro). */
-.hero{--wave-h:clamp(44px,7vw,104px);--wave-fill:#F6F6F6}
+.hero,.cta-final{--wave-h:clamp(44px,7vw,104px);--wave-fill:#F6F6F6}
 .hero-wave{position:absolute;left:0;right:0;bottom:-1px;height:var(--wave-h);z-index:2;pointer-events:none;overflow:hidden}
-.hero-wave svg{display:block;width:104%;height:100%;margin-left:-2%}
-.hero-wave .w-back{fill:rgba(81,168,166,.34);transform-box:fill-box;transform-origin:50% 100%;animation:sway 11s ease-in-out infinite alternate}
-.hero-wave .w-front{fill:var(--wave-fill)}
+.sec-wave-top{position:absolute;left:0;right:0;top:-1px;height:var(--wave-h);z-index:1;pointer-events:none;overflow:hidden}
+.hero-wave svg,.sec-wave-top svg{display:block;width:104%;height:100%;margin-left:-2%}
+.sec-wave-top svg{transform:scale(-1,-1)}
+.sec.cta-final{padding-top:calc(64px + var(--wave-h))}
+.hero-wave .w-back,.sec-wave-top .w-back{fill:rgba(81,168,166,.34);transform-box:fill-box;transform-origin:50% 100%;animation:sway 11s ease-in-out infinite alternate}
+.hero-wave .w-front,.sec-wave-top .w-front{fill:var(--wave-fill)}
 @keyframes sway{0%{transform:translateX(-1.5%) scaleY(1)}100%{transform:translateX(1.5%) scaleY(1.12)}}
 
 @media(min-width:768px){
@@ -426,6 +429,6 @@ body.menu-open{overflow:hidden}
   .js .area-map .go{stroke-dashoffset:0}
   .area-map .ping{display:none}
   .fab::before,.fab::after{display:none}
-  .hero-wave .w-back{animation:none}
+  .hero-wave .w-back,.sec-wave-top .w-back{animation:none}
   .js .rv{opacity:1;transform:none}
 }
