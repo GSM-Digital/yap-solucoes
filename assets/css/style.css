@@ -212,6 +212,7 @@ body.menu-open{overflow:hidden}
 .ph picture,.ph img{width:100%;height:100%}
 .ph img{object-fit:cover;aspect-ratio:4/5;transition:transform 1.2s var(--e-out)}
 .ph-wide{grid-column:1/-1;margin-bottom:6px}
+.ph-wide:last-child{margin-bottom:0;margin-top:6px}
 .ph-wide img{aspect-ratio:16/9}
 @media(hover:hover){.ph:hover img{transform:scale(1.06)}}
 
@@ -246,6 +247,10 @@ body.menu-open{overflow:hidden}
   .svc-cta{grid-area:cta;margin-top:30px}
   .ph img{aspect-ratio:1/1}
   .ph-wide img{aspect-ratio:2/1}
+  /* Telhados, lajes e reservatórios: a foto larga cresce até o fim do botão, sem sobrar vazio ao lado do texto */
+  .more-sec .svc-photos{align-self:stretch;grid-template-rows:auto 1fr}
+  .more-sec .ph-wide picture{display:block}
+  .more-sec .ph-wide img{object-position:50% 55%}
 }
 @keyframes flow{0%{transform:translate3d(0,0,0) rotate(0)}100%{transform:translate3d(-5%,4%,0) rotate(4deg)}}
 
