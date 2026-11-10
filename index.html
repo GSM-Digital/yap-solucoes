@@ -14,8 +14,8 @@
       imagesrcset="assets/img/hero/pintura-predial-mobile-480.webp 480w, assets/img/hero/pintura-predial-mobile-760.webp 760w" imagesizes="100vw">
 <link rel="preload" as="image" type="image/webp" media="(min-width: 768px)"
       imagesrcset="assets/img/hero/pintura-predial-desktop-800.webp 800w, assets/img/hero/pintura-predial-desktop-1120.webp 1120w" imagesizes="62vw">
-<link rel="stylesheet" href="assets/css/style.css?v=33">
-<script src="assets/js/main.js?v=10" defer></script>
+<link rel="stylesheet" href="assets/css/style.css?v=36">
+<script src="assets/js/main.js?v=12" defer></script>
 </head>
 <body>
 
@@ -31,6 +31,7 @@
   <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
   <symbol id="i-roller" viewBox="0 0 24 24"><rect x="3" y="3" width="14" height="6" rx="1.5"/><path d="M17 6h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-7v3"/><rect x="10" y="15" width="4" height="6" rx="1"/></symbol>
   <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
   <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 2.8l2.75 5.57 6.15.9-4.45 4.33 1.05 6.12L12 16.83l-5.5 2.89 1.05-6.12L3.1 9.27l6.15-.9z"/></symbol>
   <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
 </svg>
@@ -86,7 +87,11 @@
     <div class="wrap hero-wrap">
       <div class="hero-in">
         <p class="kin">YAP Soluções</p>
-        <h1 class="hero-title" id="hero-title">Pintura Predial para Condomínios, Indústrias e Comercial</h1>
+        <h1 class="hero-title" id="hero-title">
+          <span class="ln"><span>Pintura</span></span>
+          <span class="ln"><span>predial</span></span>
+          <span class="ln sub"><span>para condomínios, indústrias e comercial</span></span>
+        </h1>
         <p class="hero-lead">Pintura predial para condomínios, indústrias e espaços comerciais em Goiás. Conte o que sua estrutura precisa e fale com a YAP.</p>
         <div class="hero-cta">
           <a class="btn btn-wa btn-lg" href="https://wa.me/5562981680888?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20YAP%20e%20quero%20um%20or%C3%A7amento%20de%20pintura%20predial." target="_blank" rel="noopener" data-service="pintura" data-location="hero">
@@ -118,7 +123,6 @@
   <section class="sec svc painting-sec" id="pintura-predial" aria-labelledby="pintura-predial-title">
     <div class="wrap svc-grid">
       <div class="svc-text">
-        <p class="section-eyebrow rv">Pinturas</p>
         <h2 class="h2 rv" id="pintura-predial-title">Pintura <span class="t">predial</span></h2>
         <p class="lead rv" data-d="1">Condomínios, indústrias e espaços comerciais têm necessidades diferentes de pintura. A YAP também atende calçadas e quadras. Conte o que precisa ser pintado para receber um orçamento adequado à sua estrutura.</p>
         <ul class="tags rv" data-d="2">
@@ -154,60 +158,160 @@
         </a>
       </div>
     </div>
-    <div class="wrap painting-more rv">
-      <h3>Outros serviços de pintura</h3>
+    <!-- Serviços de pintura (pedido de Fred, 09/11): blocos quadrados com foto. Fotos de calçadas, comercial e quadras a confirmar. -->
+    <div class="wrap paint-wrap">
+      <h3 class="paint-h rv">Conheça nossos serviços de pintura</h3>
       <div class="paint-grid">
-        <article class="paint-card"><span>01</span><h4>Pintura Predial</h4><p>Para fachadas e áreas de condomínios e edifícios.</p></article>
-        <article class="paint-card"><span>02</span><h4>Pintura Industrial</h4><p>Para estruturas e áreas industriais.</p></article>
-        <article class="paint-card"><span>03</span><h4>Pintura Comercial</h4><p>Para espaços de uso comercial.</p></article>
-        <article class="paint-card"><span>04</span><h4>Pintura de Calçadas</h4><p>Para calçadas e áreas externas.</p></article>
-        <article class="paint-card"><span>05</span><h4>Pintura de Quadras</h4><p>Para quadras e espaços esportivos.</p></article>
-        <article class="paint-card paint-card-more"><span>+</span><h4>E muito mais</h4><p>Seu projeto é diferente? Converse com a YAP sobre o serviço.</p></article>
+        <article class="paint-card rv" data-d="1">
+          <figure class="paint-ph">
+            <picture>
+              <source type="image/webp" srcset="assets/img/servicos/pintura-predial-360.webp 360w, assets/img/servicos/pintura-predial-600.webp 600w" sizes="(min-width: 1024px) 360px, (min-width: 768px) 30vw, 50vw">
+              <img src="assets/img/servicos/pintura-predial-360.jpg" srcset="assets/img/servicos/pintura-predial-360.jpg 360w, assets/img/servicos/pintura-predial-600.jpg 600w" sizes="(min-width: 1024px) 360px, (min-width: 768px) 30vw, 50vw" width="600" height="600" loading="lazy" decoding="async" alt="Pintores em rapel trabalhando na fachada de um prédio alto">
+            </picture>
+          </figure>
+          <div class="paint-tx"><h4>Pintura predial</h4><p>Fachadas e áreas comuns de condomínios e edifícios.</p></div>
+        </article>
+        <article class="paint-card rv" data-d="2">
+          <figure class="paint-ph">
+            <picture>
+              <source type="image/webp" srcset="assets/img/servicos/pintura-industrial-360.webp 360w" sizes="(min-width: 1024px) 360px, (min-width: 768px) 30vw, 50vw">
+              <img src="assets/img/servicos/pintura-industrial-360.jpg" srcset="assets/img/servicos/pintura-industrial-360.jpg 360w" sizes="(min-width: 1024px) 360px, (min-width: 768px) 30vw, 50vw" width="360" height="360" loading="lazy" decoding="async" alt="Interior de um galpão amplo com cobertura metálica">
+            </picture>
+          </figure>
+          <div class="paint-tx"><h4>Pintura industrial</h4><p>Estruturas, galpões e áreas industriais.</p></div>
+        </article>
+        <article class="paint-card rv" data-d="3">
+          <figure class="paint-ph">
+            <picture>
+              <source type="image/webp" srcset="assets/img/servicos/pintura-comercial-360.webp 360w, assets/img/servicos/pintura-comercial-600.webp 600w" sizes="(min-width: 1024px) 360px, (min-width: 768px) 30vw, 50vw">
+              <img src="assets/img/servicos/pintura-comercial-360.jpg" srcset="assets/img/servicos/pintura-comercial-360.jpg 360w, assets/img/servicos/pintura-comercial-600.jpg 600w" sizes="(min-width: 1024px) 360px, (min-width: 768px) 30vw, 50vw" width="600" height="600" loading="lazy" decoding="async" alt="Garagem com piso pintado e vagas demarcadas em amarelo">
+            </picture>
+          </figure>
+          <div class="paint-tx"><h4>Pintura comercial</h4><p>Lojas, garagens e espaços de uso comercial.</p></div>
+        </article>
+        <article class="paint-card rv" data-d="3">
+          <figure class="paint-ph">
+            <picture>
+              <source type="image/webp" srcset="assets/img/servicos/pintura-calcadas-360.webp 360w, assets/img/servicos/pintura-calcadas-600.webp 600w" sizes="(min-width: 1024px) 360px, (min-width: 768px) 30vw, 50vw">
+              <img src="assets/img/servicos/pintura-calcadas-360.jpg" srcset="assets/img/servicos/pintura-calcadas-360.jpg 360w, assets/img/servicos/pintura-calcadas-600.jpg 600w" sizes="(min-width: 1024px) 360px, (min-width: 768px) 30vw, 50vw" width="600" height="600" loading="lazy" decoding="async" alt="Calçada de concreto em área externa de condomínio">
+            </picture>
+          </figure>
+          <div class="paint-tx"><h4>Pintura de calçadas</h4><p>Calçadas e áreas externas.</p></div>
+        </article>
+        <article class="paint-card rv" data-d="3">
+          <figure class="paint-ph">
+            <picture>
+              <source type="image/webp" srcset="assets/img/servicos/pintura-quadras-240.webp 240w" sizes="(min-width: 1024px) 360px, (min-width: 768px) 30vw, 50vw">
+              <img src="assets/img/servicos/pintura-quadras-240.jpg" srcset="assets/img/servicos/pintura-quadras-240.jpg 240w" sizes="(min-width: 1024px) 360px, (min-width: 768px) 30vw, 50vw" width="240" height="240" loading="lazy" decoding="async" alt="Quadra esportiva com piso azul e linhas brancas">
+            </picture>
+          </figure>
+          <div class="paint-tx"><h4>Pintura de quadras</h4><p>Quadras e espaços esportivos.</p></div>
+        </article>
+        <a class="paint-card paint-more rv" data-d="3" href="https://wa.me/5562981680888?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20YAP%20e%20quero%20um%20or%C3%A7amento%20de%20pintura%20predial." target="_blank" rel="noopener" data-service="pintura" data-location="servicos-pintura">
+          <span class="paint-more-ic" aria-hidden="true"><svg class="i"><use href="#i-plus"/></svg></span>
+          <h4>E muito mais</h4>
+          <p>Seu projeto é diferente? Conte para a YAP o que precisa ser pintado.</p>
+          <span class="paint-more-cta"><svg class="i" aria-hidden="true"><use href="#i-whatsapp"/></svg>Falar no WhatsApp</span>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- S3 · Diferenciais: linguagem inspirada na referência, sem promessas técnicas não verificadas. -->
-  <section class="sec why-sec sec-snow" id="por-que-yap" aria-labelledby="why-title" aria-label="Por que escolher a YAP">
+  <!-- Por que escolher a YAP: texto sugerido por Fred, igual ao site (yapsolucoes.com.br/a-yap). -->
+  <section class="sec why-sec sec-snow" id="por-que-yap" aria-labelledby="why-title">
     <div class="wrap why-grid">
-      <div class="why-copy rv">
-        <p class="section-eyebrow">A YAP para o seu projeto</p>
-        <h2 class="h2" id="why-title">Por que escolher <span class="t">a YAP?</span></h2>
-        <p class="lead">Cada espaço pede um olhar diferente. A YAP Soluções atende projetos de pintura em condomínios, indústrias e áreas comerciais, além de serviços de impermeabilização. Compartilhe as necessidades da sua estrutura para conversar sobre a solução mais adequada.</p>
-        <a class="btn btn-wa btn-lg" href="https://wa.me/5562981680888?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20YAP%20e%20quero%20um%20or%C3%A7amento%20de%20pintura%20predial." target="_blank" rel="noopener" data-service="pintura" data-location="por-que-yap">Solicitar orçamento agora</a>
+      <div class="why-copy">
+        <h2 class="h2 rv" id="why-title">Por que escolher <span class="t">a YAP?</span></h2>
+        <p class="lead rv" data-d="1">Confie na expertise da YAP Soluções, sua parceira especializada em pintura para uma ampla gama de ambientes. Desde prédios até escolas, quadras esportivas e mais. Oferecemos mais do que apenas pintura: entregamos qualidade, durabilidade e um toque profissional que transforma cada espaço. Faça a escolha certa para a renovação dos seus ambientes!</p>
+        <ul class="tags rv" data-d="2">
+          <li><span class="mi"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg></span>Qualidade</li>
+          <li><span class="mi"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg></span>Durabilidade</li>
+          <li><span class="mi"><svg class="i" aria-hidden="true"><use href="#i-star"/></svg></span>Toque profissional</li>
+        </ul>
+        <div class="svc-cta why-cta rv" data-d="2">
+        <a class="btn btn-wa btn-lg" href="https://wa.me/5562981680888?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20YAP%20e%20quero%20um%20or%C3%A7amento%20de%20pintura%20predial." target="_blank" rel="noopener" data-service="pintura" data-location="por-que-yap">
+          <svg class="i" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+          Solicitar orçamento agora
+        </a>
+        </div>
       </div>
       <div class="why-photos rv" data-d="1">
-        <img src="assets/img/pintura/predio-pintado-800.webp" width="800" height="1000" loading="lazy" decoding="async" alt="Fachada de edifício com pintura concluída">
-        <img src="assets/img/pintura/pintor-parede-600.webp" width="600" height="800" loading="lazy" decoding="async" alt="Profissional da YAP trabalhando em uma parede">
+        <figure class="ph"><picture>
+              <source type="image/webp" srcset="assets/img/pintura/predio-pintado-400.webp 400w, assets/img/pintura/predio-pintado-800.webp 800w" sizes="(min-width: 1024px) 340px, 55vw">
+              <img src="assets/img/pintura/predio-pintado-400.jpg" srcset="assets/img/pintura/predio-pintado-400.jpg 400w, assets/img/pintura/predio-pintado-800.jpg 800w" sizes="(min-width: 1024px) 340px, 55vw" width="400" height="500" loading="lazy" decoding="async" alt="Prédio residencial alto com a fachada pintada">
+            </picture></figure>
+        <figure class="ph"><picture>
+              <source type="image/webp" srcset="assets/img/pintura/pintor-parede-600.webp 600w" sizes="(min-width: 1024px) 260px, 40vw">
+              <img src="assets/img/pintura/pintor-parede-600.jpg" srcset="assets/img/pintura/pintor-parede-600.jpg 600w" sizes="(min-width: 1024px) 260px, 40vw" width="600" height="800" loading="lazy" decoding="async" alt="Profissional com camiseta da YAP preparando uma parede para pintura">
+            </picture></figure>
       </div>
     </div>
   </section>
 
-  <!-- S4 · Impermeabilização predial (manta líquida e asfáltica). -->
-  <section class="sec svc svc-rev sec-snow waterproof-sec" id="impermeabilizacao" aria-labelledby="impermeabilizacao-title">
-    <div class="wrap svc-grid">
-      <div class="svc-text">
-        <h2 class="h2 rv" id="impermeabilizacao-title" aria-label="Impermeabilização predial especializada">Impermeabilização <span class="t">predial especializada</span></h2>
-        <p class="lead rv" data-d="1">Para telhados, lajes e outras estruturas prediais. A YAP trabalha com opções de impermeabilização líquida e manta asfáltica; a aplicação adequada depende das condições de cada área. Conte o que precisa ser protegido e peça um orçamento pelo WhatsApp.</p>
+  <!-- Impermeabilização em destaque, no padrão do topo da página (pedido de Fred, itens 6 e 7). -->
+  <section class="feat" id="impermeabilizacao" aria-labelledby="impermeabilizacao-title" style="--wave-top:#F6F6F6;--wave-bottom:#FFFFFF">
+    <div class="sec-wave-top" aria-hidden="true">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none" focusable="false">
+        <path class="w-back" d="M0 44C220 86 470 92 720 66C980 40 1220 14 1440 30V100H0Z"/>
+        <path class="w-front" d="M0 62C250 100 500 102 760 78C1010 54 1230 34 1440 48V100H0Z"/>
+      </svg>
+    </div>
+    <div class="feat-media" aria-hidden="true">
+      <picture>
+              <source type="image/webp" srcset="assets/img/impermeabilizacao/cobertura-galpao-480.webp 480w, assets/img/impermeabilizacao/cobertura-galpao-800.webp 800w" sizes="(min-width: 768px) 60vw, 100vw">
+              <img src="assets/img/impermeabilizacao/cobertura-galpao-480.jpg" srcset="assets/img/impermeabilizacao/cobertura-galpao-480.jpg 480w, assets/img/impermeabilizacao/cobertura-galpao-800.jpg 800w" sizes="(min-width: 768px) 60vw, 100vw" width="480" height="640" loading="lazy" decoding="async" alt="">
+            </picture>
+    </div>
+    <div class="wrap feat-wrap">
+      <div class="feat-text">
+        <h2 class="feat-title rv" id="impermeabilizacao-title"><span class="big">Impermeabilização</span> <span class="t">predial especializada</span></h2>
+        <p class="feat-lead rv" data-d="1">Para telhados, lajes e reservatórios de empresas com grandes estruturas, em todo o estado de Goiás. Conte o que precisa ser impermeabilizado e peça seu orçamento pelo WhatsApp.</p>
         <ul class="tags rv" data-d="2">
           <li><span class="mi"><svg class="i" aria-hidden="true"><use href="#i-drop"/></svg></span>Manta líquida</li>
           <li><span class="mi"><svg class="i" aria-hidden="true"><use href="#i-layers"/></svg></span>Manta asfáltica</li>
         </ul>
+        <div class="feat-cta rv" data-d="2">
+        <a class="btn btn-wa btn-lg" href="https://wa.me/5562981680888?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20YAP%20e%20quero%20um%20or%C3%A7amento%20de%20impermeabiliza%C3%A7%C3%A3o." target="_blank" rel="noopener" data-service="impermeabilizacao" data-location="impermeabilizacao">
+          <svg class="i" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+          Orçamento de impermeabilização
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none" focusable="false">
+        <path class="w-back" d="M0 44C220 86 470 92 720 66C980 40 1220 14 1440 30V100H0Z"/>
+        <path class="w-front" d="M0 62C250 100 500 102 760 78C1010 54 1230 34 1440 48V100H0Z"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Mais sobre impermeabilização: conteúdo do material da YAP enviado por Fred (item 8) e do site (/impermeabilizacao). -->
+  <section class="sec svc more-sec" id="impermeabilizacao-detalhes" aria-labelledby="imper-more-title">
+    <div class="wrap svc-grid">
+      <div class="svc-text">
+        <h2 class="h2 rv" id="imper-more-title">Telhados, lajes <span class="t">e reservatórios</span></h2>
+        <ul class="tags rv" data-d="1">
+          <li><span class="mi"><svg class="i" aria-hidden="true"><use href="#i-drop"/></svg></span>Borracha líquida</li>
+          <li><span class="mi"><svg class="i" aria-hidden="true"><use href="#i-layers"/></svg></span>Manta asfáltica</li>
+          <li><span class="mi"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></span>Injeção de poliuretano</li>
+        </ul>
+        <ul class="checks rv" data-d="2">
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span>Melhora da resistência física em telhas de fibrocimento</span></li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span>Conforto acústico, decorrente de chuvas, em telhas metálicas</span></li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span>Agilidade no processo de manutenção</span></li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span>Aumenta a durabilidade da sua cobertura, de telhas metálicas ou de fibrocimento</span></li>
+        </ul>
+        <p class="lead more-note rv" data-d="2">A impermeabilização de floreiras, piscinas e áreas de lazer é essencial para preservar a estrutura e evitar vazamentos. Na YAP Soluções, oferecemos soluções especializadas para garantir a durabilidade e a integridade desses espaços.</p>
       </div>
       <div class="svc-photos">
-        <figure class="ph ph-wide rv" data-d="1">
-            <picture>
-              <source type="image/webp" srcset="assets/img/impermeabilizacao/cobertura-galpao-480.webp 480w, assets/img/impermeabilizacao/cobertura-galpao-800.webp 800w" sizes="(min-width: 1024px) 640px, 100vw">
-              <img src="assets/img/impermeabilizacao/cobertura-galpao-480.jpg" srcset="assets/img/impermeabilizacao/cobertura-galpao-480.jpg 480w, assets/img/impermeabilizacao/cobertura-galpao-800.jpg 800w" sizes="(min-width: 1024px) 640px, 100vw" width="480" height="640" loading="lazy" decoding="async" alt="Cobertura metálica de um galpão grande após o tratamento, com exaustores no telhado" style="object-position:50% 62%">
-            </picture>
-        </figure>
-        <figure class="ph rv" data-d="2">
+        <figure class="ph rv" data-d="1">
             <picture>
               <source type="image/webp" srcset="assets/img/impermeabilizacao/manta-telha-480.webp 480w, assets/img/impermeabilizacao/manta-telha-768.webp 768w" sizes="(min-width: 1024px) 320px, 50vw">
               <img src="assets/img/impermeabilizacao/manta-telha-480.jpg" srcset="assets/img/impermeabilizacao/manta-telha-480.jpg 480w, assets/img/impermeabilizacao/manta-telha-768.jpg 768w" sizes="(min-width: 1024px) 320px, 50vw" width="480" height="480" loading="lazy" decoding="async" alt="Profissional aplicando uma faixa de manta sobre as telhas onduladas de uma cobertura">
             </picture>
         </figure>
-        <figure class="ph rv" data-d="3">
+        <figure class="ph rv" data-d="2">
             <picture>
               <source type="image/webp" srcset="assets/img/impermeabilizacao/vedacao-exaustor-480.webp 480w, assets/img/impermeabilizacao/vedacao-exaustor-768.webp 768w" sizes="(min-width: 1024px) 320px, 50vw">
               <img src="assets/img/impermeabilizacao/vedacao-exaustor-480.jpg" srcset="assets/img/impermeabilizacao/vedacao-exaustor-480.jpg 480w, assets/img/impermeabilizacao/vedacao-exaustor-768.jpg 768w" sizes="(min-width: 1024px) 320px, 50vw" width="480" height="480" loading="lazy" decoding="async" alt="Base de um exaustor de telhado com a vedação aplicada ao redor">
@@ -215,68 +319,97 @@
         </figure>
       </div>
       <div class="svc-cta rv" data-d="2">
-        <a class="btn btn-wa btn-lg" href="https://wa.me/5562981680888?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20YAP%20e%20quero%20um%20or%C3%A7amento%20de%20impermeabiliza%C3%A7%C3%A3o." target="_blank" rel="noopener" data-service="impermeabilizacao" data-location="impermeabilizacao">
+        <a class="btn btn-wa btn-lg" href="https://wa.me/5562981680888?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20YAP%20e%20quero%20um%20or%C3%A7amento%20de%20impermeabiliza%C3%A7%C3%A3o." target="_blank" rel="noopener" data-service="impermeabilizacao" data-location="impermeabilizacao-detalhes">
           <svg class="i" aria-hidden="true"><use href="#i-whatsapp"/></svg>
           Orçamento de impermeabilização
         </a>
       </div>
     </div>
-    <div class="wrap detail-grid rv">
-      <div class="detail-photo"><img src="assets/img/impermeabilizacao/manta-telha-768.webp" width="768" height="768" loading="lazy" decoding="async" alt="Aplicação de manta sobre cobertura de telhas"></div>
-      <div class="detail-copy">
-        <p class="section-eyebrow">Mais sobre impermeabilização</p>
-        <h3>Borracha líquida e manta asfáltica</h3>
-        <p>A borracha líquida e a manta asfáltica são alternativas para diferentes superfícies e necessidades. A escolha do material e do método de aplicação deve considerar o estado da cobertura e o tipo de exposição.</p>
-        <ul class="detail-points"><li>Telhados e lajes</li><li>Áreas expostas à água e ao tempo</li><li>Avaliação da estrutura antes da aplicação</li></ul>
-        <a class="btn btn-wa" href="https://wa.me/5562981680888?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20YAP%20e%20quero%20um%20or%C3%A7amento%20de%20impermeabiliza%C3%A7%C3%A3o." target="_blank" rel="noopener" data-service="impermeabilizacao" data-location="detalhes-impermeabilizacao">Solicitar orçamento agora</a>
+  </section>
+
+  <!-- Silos em destaque, no padrão do topo da página (pedido de Fred, item 9). "Do agro" é leitura da fala de Fred, a confirmar. -->
+  <section class="feat" id="silos" aria-labelledby="silos-title" style="--wave-top:#FFFFFF;--wave-bottom:#F6F6F6">
+    <div class="sec-wave-top" aria-hidden="true">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none" focusable="false">
+        <path class="w-back" d="M0 44C220 86 470 92 720 66C980 40 1220 14 1440 30V100H0Z"/>
+        <path class="w-front" d="M0 62C250 100 500 102 760 78C1010 54 1230 34 1440 48V100H0Z"/>
+      </svg>
+    </div>
+    <div class="feat-media" aria-hidden="true">
+      <picture>
+              <source type="image/webp" srcset="assets/img/silos/aplicacao-cobertura-420.webp 420w, assets/img/silos/aplicacao-cobertura-720.webp 720w" sizes="(min-width: 768px) 60vw, 100vw">
+              <img src="assets/img/silos/aplicacao-cobertura-420.jpg" srcset="assets/img/silos/aplicacao-cobertura-420.jpg 420w, assets/img/silos/aplicacao-cobertura-720.jpg 720w" sizes="(min-width: 768px) 60vw, 100vw" width="420" height="560" loading="lazy" decoding="async" alt="">
+            </picture>
+    </div>
+    <div class="wrap feat-wrap">
+      <div class="feat-text">
+        <h2 class="feat-title rv" id="silos-title"><span class="big">Impermeabilização</span> <span class="t">de silos agrícolas:</span> <span class="feat-sub">Garanta a qualidade do seu estoque.</span></h2>
+        <p class="feat-lead rv" data-d="1">Para você que é do agro: impermeabilização e calafetação de silos e galpões em todo o estado de Goiás. Peça seu orçamento pelo WhatsApp.</p>
+        <ul class="tags rv" data-d="2">
+          <li><span class="mi"><svg class="i" aria-hidden="true"><use href="#i-silo"/></svg></span>Silos</li>
+          <li><span class="mi"><svg class="i" aria-hidden="true"><use href="#i-building"/></svg></span>Galpões</li>
+        </ul>
+        <div class="feat-cta rv" data-d="2">
+        <a class="btn btn-wa btn-lg" href="https://wa.me/5562981680888?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20YAP%20e%20quero%20um%20or%C3%A7amento%20de%20impermeabiliza%C3%A7%C3%A3o%20de%20silos." target="_blank" rel="noopener" data-service="silos" data-location="silos">
+          <svg class="i" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+          Orçamento para silos
+        </a>
+        </div>
       </div>
+    </div>
+    <div class="hero-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none" focusable="false">
+        <path class="w-back" d="M0 44C220 86 470 92 720 66C980 40 1220 14 1440 30V100H0Z"/>
+        <path class="w-front" d="M0 62C250 100 500 102 760 78C1010 54 1230 34 1440 48V100H0Z"/>
+      </svg>
     </div>
   </section>
 
-  <!-- S5 · Impermeabilização de silos (seção escura). -->
-  <section class="sec svc sec-dark silo-sec" id="silos" aria-labelledby="silos-title">
+  <!-- Mais sobre silos: conteúdo do material da YAP enviado por Fred (item 10) e do site (/impermeabilizacao). -->
+  <section class="sec svc svc-rev sec-snow more-sec" id="silos-detalhes" aria-labelledby="silos-more-title">
     <div class="wrap svc-grid">
       <div class="svc-text">
-        <h2 class="h2 rv" id="silos-title" aria-label="Impermeabilização de silos agrícolas: Garanta a qualidade do seu estoque.">Impermeabilização de silos agrícolas: <span class="t">Garanta a qualidade do seu estoque.</span></h2>
-        <p class="lead rv" data-d="1">Na armazenagem de grãos, proteger a estrutura contra a entrada de água é parte do cuidado com o estoque. Conte à YAP como está seu silo para conversar sobre impermeabilização e calafetação.</p>
-        <ul class="tags rv" data-d="2">
-          <li><span class="mi"><svg class="i" aria-hidden="true"><use href="#i-silo"/></svg></span>Agronegócio</li>
-        </ul>
+        <h2 class="h2 rv" id="silos-more-title">Redução de perdas <span class="t">pós-colheita</span></h2>
+        <p class="lead rv" data-d="1">A impermeabilização de silos não é apenas uma solução; é um investimento inteligente. Reduza as perdas pós-colheita e proteja seus grãos com a expertise da YAP Soluções. Nossa impermeabilização oferece mais do que proteção contra umidade: proporciona a segurança necessária para preservar a qualidade e o valor da sua colheita.</p>
+        <div class="bcard rv" data-d="2">
+          <h3>Silos e galpões</h3>
+          <ul class="checks">
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span>Redução de perda no período de armazenagem</span></li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span>Promove estanqueidade</span></li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span>Controle do expurgo</span></li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span>Redução de custo com refrigeração artificial</span></li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span>Aumento da vida útil da estrutura</span></li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span>Redução da temperatura do substrato</span></li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span>Proteção contra raios UV, chuvas ácidas, impacto, salinidade, fungos e bactérias</span></li>
+          </ul>
+        </div>
+        <p class="badge rv" data-d="2"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Manutenção sem parar a produção</p>
       </div>
       <div class="svc-photos">
         <figure class="ph ph-wide rv" data-d="1">
             <picture>
               <source type="image/webp" srcset="assets/img/silos/teto-silo-lavoura-420.webp 420w, assets/img/silos/teto-silo-lavoura-720.webp 720w" sizes="(min-width: 1024px) 640px, 100vw">
-              <img src="assets/img/silos/teto-silo-lavoura-420.jpg" srcset="assets/img/silos/teto-silo-lavoura-420.jpg 420w, assets/img/silos/teto-silo-lavoura-720.jpg 720w" sizes="(min-width: 1024px) 640px, 100vw" width="420" height="560" loading="lazy" decoding="async" alt="Vista do alto do teto de um silo pintado de branco, com a lavoura ao fundo" style="object-position:50% 38%">
+              <img src="assets/img/silos/teto-silo-lavoura-420.jpg" srcset="assets/img/silos/teto-silo-lavoura-420.jpg 420w, assets/img/silos/teto-silo-lavoura-720.jpg 720w" sizes="(min-width: 1024px) 640px, 100vw" width="420" height="560" loading="lazy" decoding="async" alt="Vista do alto do teto de um silo pintado de branco, com a lavoura ao fundo">
             </picture>
         </figure>
         <figure class="ph rv" data-d="2">
-            <picture>
-              <source type="image/webp" srcset="assets/img/silos/aplicacao-cobertura-420.webp 420w, assets/img/silos/aplicacao-cobertura-720.webp 720w" sizes="(min-width: 1024px) 320px, 50vw">
-              <img src="assets/img/silos/aplicacao-cobertura-420.jpg" srcset="assets/img/silos/aplicacao-cobertura-420.jpg 420w, assets/img/silos/aplicacao-cobertura-720.jpg 720w" sizes="(min-width: 1024px) 320px, 50vw" width="420" height="560" loading="lazy" decoding="async" alt="Profissional com uniforme da YAP aplicando produto com pistola na cobertura de um silo">
-            </picture>
-        </figure>
-        <figure class="ph rv" data-d="3">
             <picture>
               <source type="image/webp" srcset="assets/img/silos/base-silo-420.webp 420w, assets/img/silos/base-silo-720.webp 720w" sizes="(min-width: 1024px) 320px, 50vw">
               <img src="assets/img/silos/base-silo-420.jpg" srcset="assets/img/silos/base-silo-420.jpg 420w, assets/img/silos/base-silo-720.jpg 720w" sizes="(min-width: 1024px) 320px, 50vw" width="420" height="560" loading="lazy" decoding="async" alt="Profissional da YAP trabalhando na base da parede de um silo">
             </picture>
         </figure>
+        <figure class="ph rv" data-d="3">
+            <picture>
+              <source type="image/webp" srcset="assets/img/silos/aplicacao-cobertura-420.webp 420w, assets/img/silos/aplicacao-cobertura-720.webp 720w" sizes="(min-width: 1024px) 320px, 50vw">
+              <img src="assets/img/silos/aplicacao-cobertura-420.jpg" srcset="assets/img/silos/aplicacao-cobertura-420.jpg 420w, assets/img/silos/aplicacao-cobertura-720.jpg 720w" sizes="(min-width: 1024px) 320px, 50vw" width="420" height="560" loading="lazy" decoding="async" alt="Profissional com uniforme da YAP aplicando produto na cobertura de um silo">
+            </picture>
+        </figure>
       </div>
       <div class="svc-cta rv" data-d="2">
-        <a class="btn btn-wa btn-lg" href="https://wa.me/5562981680888?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20YAP%20e%20quero%20um%20or%C3%A7amento%20de%20impermeabiliza%C3%A7%C3%A3o%20de%20silos." target="_blank" rel="noopener" data-service="silos" data-location="silos">
+        <a class="btn btn-wa btn-lg" href="https://wa.me/5562981680888?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20YAP%20e%20quero%20um%20or%C3%A7amento%20de%20impermeabiliza%C3%A7%C3%A3o%20de%20silos." target="_blank" rel="noopener" data-service="silos" data-location="silos-detalhes">
           <svg class="i" aria-hidden="true"><use href="#i-whatsapp"/></svg>
           Orçamento para silos
         </a>
-      </div>
-    </div>
-    <div class="wrap silo-detail rv">
-      <div class="silo-detail-photo"><img src="assets/img/silos/aplicacao-cobertura-720.webp" width="720" height="960" loading="lazy" decoding="async" alt="Profissional da YAP aplicando produto na cobertura de um silo"></div>
-      <div class="silo-detail-copy">
-        <p class="section-eyebrow">Proteção para o agro</p>
-        <h3>Mais cuidado com os grãos, desde a estrutura</h3>
-        <p>Frestas e pontos de entrada de água podem comprometer a proteção da área de armazenagem. A impermeabilização e a calafetação ajudam a proteger o silo; o serviço indicado depende de uma avaliação da estrutura.</p>
-        <p>Mostre à YAP onde estão os pontos que precisam de atenção para discutir o serviço mais adequado, sem interromper seu planejamento de manutenção.</p>
       </div>
     </div>
   </section>
@@ -368,7 +501,7 @@
           </div>
           <div class="faq">
             <h3><button class="faq-q" type="button" id="faq-q3" aria-expanded="true" aria-controls="faq-a3">Quais serviços a YAP faz?<span class="pm" aria-hidden="true"><svg class="i"><use href="#i-plus"/></svg></span></button></h3>
-            <div class="faq-a" id="faq-a3" role="region" aria-labelledby="faq-q3"><p class="faq-in">Pintura predial, impermeabilização com manta líquida e asfáltica, e impermeabilização de silos.</p></div>
+            <div class="faq-a" id="faq-a3" role="region" aria-labelledby="faq-q3"><p class="faq-in">Pintura predial, industrial e comercial, pintura de calçadas e quadras, impermeabilização predial, impermeabilização de silos e galpões, e serviços de construção e reforma.</p></div>
           </div>
           <div class="faq">
             <h3><button class="faq-q" type="button" id="faq-q4" aria-expanded="true" aria-controls="faq-a4">Preciso preencher formulário?<span class="pm" aria-hidden="true"><svg class="i"><use href="#i-plus"/></svg></span></button></h3>
@@ -376,16 +509,15 @@
           </div>
       </div>
     </div>
-    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Vocês atendem fora de Goiânia?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. A YAP atende todo o estado de Goiás, da capital ao interior."}}, {"@type": "Question", "name": "Como peço um orçamento?", "acceptedAnswer": {"@type": "Answer", "text": "Pelo WhatsApp. Toque no botão do serviço que você precisa: a mensagem já chega dizendo se é pintura predial, impermeabilização ou silos."}}, {"@type": "Question", "name": "Quais serviços a YAP faz?", "acceptedAnswer": {"@type": "Answer", "text": "Pintura predial, impermeabilização com manta líquida e asfáltica, e impermeabilização de silos."}}, {"@type": "Question", "name": "Preciso preencher formulário?", "acceptedAnswer": {"@type": "Answer", "text": "Não. O contato é direto pelo WhatsApp, sem formulário."}}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Vocês atendem fora de Goiânia?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. A YAP atende todo o estado de Goiás, da capital ao interior."}}, {"@type": "Question", "name": "Como peço um orçamento?", "acceptedAnswer": {"@type": "Answer", "text": "Pelo WhatsApp. Toque no botão do serviço que você precisa: a mensagem já chega dizendo se é pintura predial, impermeabilização ou silos."}}, {"@type": "Question", "name": "Quais serviços a YAP faz?", "acceptedAnswer": {"@type": "Answer", "text": "Pintura predial, industrial e comercial, pintura de calçadas e quadras, impermeabilização predial, impermeabilização de silos e galpões, e serviços de construção e reforma."}}, {"@type": "Question", "name": "Preciso preencher formulário?", "acceptedAnswer": {"@type": "Answer", "text": "Não. O contato é direto pelo WhatsApp, sem formulário."}}]}</script>
   </section>
 
-  <!-- S9 · Outros serviços: referência de Fred, sem extrapolar provas ou resultados. -->
+  <!-- Outros serviços: construção e reformas (pedido de Fred, item 11; texto do site /a-yap). -->
   <section class="sec other-sec" id="outros-servicos" aria-labelledby="other-title">
     <div class="wrap other-grid">
       <div class="other-copy rv">
-        <p class="section-eyebrow">Mais soluções para a sua obra</p>
         <h2 class="h2" id="other-title">Construção e reformas <span class="t">comerciais, prediais e industriais</span></h2>
-        <p class="lead">A YAP também apresenta serviços de obra e reforma. Além da pintura e da impermeabilização, converse com a equipe sobre o que sua estrutura precisa.</p>
+        <p class="lead">A construção e reforma requer expertise e precisão. Na YAP Soluções, estamos preparados para oferecer soluções completas, desde o planejamento até a entrega final do projeto. Com nossa equipe especializada e focada na qualidade, garantimos os serviços adaptados às necessidades específicas do seu negócio.</p>
         <a class="btn btn-wa btn-lg" href="https://wa.me/5562981680888?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20YAP%20e%20quero%20conversar%20sobre%20constru%C3%A7%C3%A3o%20e%20reforma." target="_blank" rel="noopener" data-service="reformas" data-location="outros-servicos">Solicitar orçamento agora</a>
       </div>
       <ul class="other-services rv" data-d="1">

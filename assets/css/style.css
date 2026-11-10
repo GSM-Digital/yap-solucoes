@@ -146,7 +146,7 @@ body.menu-open{overflow:hidden}
 
 .hero-scroll{display:none}
 /* Divisão ondulada no fim do hero (suave, contínua). --wave-fill = cor da seção seguinte (S3, fundo claro). */
-.hero,.cta-final{--wave-h:clamp(44px,7vw,104px);--wave-fill:#F6F6F6}
+.hero,.cta-final{--wave-h:clamp(44px,7vw,104px);--wave-fill:#FFFFFF}
 .hero-wave{position:absolute;left:0;right:0;bottom:-1px;height:var(--wave-h);z-index:2;pointer-events:none;overflow:hidden}
 .sec-wave-top{position:absolute;left:0;right:0;top:-1px;height:var(--wave-h);z-index:1;pointer-events:none;overflow:hidden}
 .hero-wave svg,.sec-wave-top svg{display:block;width:104%;height:100%;margin-left:-2%}
@@ -198,8 +198,8 @@ body.menu-open{overflow:hidden}
    caber inteira na coluna (a palavra mede ~11,3x o tamanho da fonte). */
 .svc-grid{display:grid;gap:28px}
 .svc-text,.rev-head,.area-text,.faq-head,.cta-head{container-type:inline-size}
-.svc .h2,.reviews .h2,.area .h2,.faq-sec .h2,.cta-final .h2{margin:0 0 18px;font:800 clamp(22px,calc((100vw - 40px) / 11.5),60px)/1 var(--f-display);font-size:clamp(22px,calc(100cqw / 11.5),60px);letter-spacing:-.025em;text-transform:uppercase;color:var(--yap-ink)}
-.svc .h2 .t,.reviews .h2 .t,.area .h2 .t,.faq-sec .h2 .t,.cta-final .h2 .t{display:block;color:var(--yap-teal-deep)}
+.svc .h2,.reviews .h2,.area .h2,.faq-sec .h2,.cta-final .h2,.why-sec .h2,.other-sec .h2{margin:0 0 18px;font:800 clamp(22px,calc((100vw - 40px) / 11.5),60px)/1 var(--f-display);font-size:clamp(22px,calc(100cqw / 11.5),60px);letter-spacing:-.025em;text-transform:uppercase;color:var(--yap-ink)}
+.svc .h2 .t,.reviews .h2 .t,.area .h2 .t,.faq-sec .h2 .t,.cta-final .h2 .t,.why-sec .h2 .t,.other-sec .h2 .t{display:block;color:var(--yap-teal-deep)}
 .tags{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:24px 0 0;padding:0;list-style:none}
 .tags li{display:flex;align-items:center;gap:6px;padding:6px 10px 6px 6px;border-radius:999px;background:#fff;border:1px solid rgba(81,168,166,.22);box-shadow:0 4px 0 0 #51A8A6,0 14px 24px -18px rgba(15,59,58,.5);font:700 13px/1.2 var(--f-display);color:var(--yap-ink);transition:transform .45s var(--e-spring)}
 .mi{flex:none;display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:rgba(81,168,166,.12);color:var(--yap-teal-deep);transition:transform .6s var(--e-spring),background-color .3s}
@@ -340,7 +340,9 @@ body.menu-open{overflow:hidden}
 
 /* S9 · CTA final: card de serviço do design system (.card-lip), um por serviço */
 .cta-head{max-width:460px}
-.picks{display:grid;gap:16px;margin-top:32px}
+.picks{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:32px}
+.pick{min-width:0}
+.pick-txt small{flex-wrap:wrap}
 .pick{display:flex;align-items:center;gap:14px;min-height:98px;padding:16px 18px;border-radius:20px;background:#fff;border:1px solid rgba(81,168,166,.2);box-shadow:0 7px 0 0 #51A8A6,0 22px 34px -22px rgba(0,0,0,.55);color:var(--yap-ink);text-decoration:none;-webkit-tap-highlight-color:transparent;transition:transform .5s var(--e-out),box-shadow .5s var(--e-out)}
 .pick .ic{flex:none;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--yap-teal-site);background:rgba(81,168,166,.09);transition:transform .6s var(--e-spring),background-color .3s}
 .pick .ic svg.i{width:28px;height:28px;stroke-width:1.5}
@@ -413,51 +415,91 @@ body.menu-open{overflow:hidden}
   .ft-brand img{width:150px}
 }
 
-/* Complementos solicitados para a LP da YAP, com layout mobile first. */
-.section-eyebrow{margin:0 0 16px;color:var(--yap-teal-ink);font:800 12px/1.3 var(--f-display);letter-spacing:.22em;text-transform:uppercase}
-.sec-dark .section-eyebrow{color:var(--yap-aqua)}
-.painting-sec{background:#fff}
-.painting-more{margin-top:56px}
-.painting-more h3{margin:0 0 22px;color:var(--yap-ink);font:800 clamp(24px,5vw,40px)/1.1 var(--f-display)}
-.paint-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-.paint-card{display:flex;flex-direction:column;min-height:180px;padding:20px 16px;border-radius:18px;background:#F6FAF9;border:1px solid rgba(81,168,166,.25);box-shadow:0 6px 0 #51A8A6;color:var(--yap-ink)}
-.paint-card span{font:800 13px/1 var(--f-display);color:var(--yap-teal-ink)}
-.paint-card h4{margin:22px 0 8px;font:800 clamp(16px,2vw,21px)/1.12 var(--f-display)}
-.paint-card p{margin:0;font-size:13px;line-height:1.5;color:var(--yap-body)}
-.paint-card-more{background:var(--yap-abyss);color:#fff}.paint-card-more h4,.paint-card-more p{color:#fff}.paint-card-more span{color:var(--yap-aqua)}
+/* Serviços de pintura: blocos quadrados com foto (card do design system, borda teal) */
+.paint-wrap{margin-top:56px}
+.paint-h{margin:0 0 22px;font:800 clamp(20px,5vw,30px)/1.15 var(--f-display);letter-spacing:-.02em;text-transform:uppercase;color:var(--yap-ink)}
+.paint-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.paint-card{display:flex;flex-direction:column;margin:0;border-radius:18px;overflow:hidden;background:#fff;border:1px solid rgba(81,168,166,.2);box-shadow:0 7px 0 0 #51A8A6,0 22px 34px -26px rgba(15,59,58,.45);color:var(--yap-ink);text-decoration:none;transition:transform .5s var(--e-out)}
+.paint-ph{margin:0;aspect-ratio:1/1;overflow:hidden;background:var(--yap-mint)}
+.paint-ph picture,.paint-ph img{width:100%;height:100%}
+.paint-ph img{object-fit:cover;transition:transform 1.2s var(--e-out)}
+.paint-tx{padding:14px 14px 16px}
+.paint-card h4{margin:0 0 6px;font:700 15px/1.25 var(--f-display);color:var(--yap-teal-deep)}
+.paint-card p{margin:0;font:400 13px/1.5 var(--f-body);color:var(--yap-body)}
+.paint-more{justify-content:center;gap:10px;padding:20px 16px;background:linear-gradient(262deg,#51A8A6 0%,#154241 100%);border-color:transparent}
+.paint-more h4{margin:0;color:#fff;font-size:18px}
+.paint-more p{color:rgba(255,255,255,.86)}
+.paint-more-ic{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(147,241,239,.18);color:var(--yap-aqua)}
+.paint-more-ic svg.i{width:22px;height:22px;stroke-width:2.2}
+.paint-more-cta{display:inline-flex;align-items:center;gap:6px;margin-top:4px;font:700 12px/1.2 var(--f-display);letter-spacing:.06em;text-transform:uppercase;color:#58EC6C}
+.paint-more-cta svg.i{width:16px;height:16px}
+@media(hover:hover){.paint-card:hover{transform:translateY(-6px)}.paint-card:hover .paint-ph img{transform:scale(1.06)}}
+
+/* Por que escolher a YAP e Construção e reformas */
 .why-grid,.other-grid{display:grid;gap:32px;align-items:center}
-.why-sec .h2,.other-sec .h2{margin:0 0 20px;font:800 clamp(34px,8vw,64px)/1.05 var(--f-display);letter-spacing:-.03em;text-transform:uppercase;color:var(--yap-ink)}
-.why-sec .h2 .t,.other-sec .h2 .t{display:block;color:var(--yap-teal-ink)}
-.why-copy .btn,.other-copy .btn{margin-top:24px;max-width:100%}
-.why-photos{position:relative;display:grid;grid-template-columns:1.35fr 1fr;gap:12px;align-items:end}
-.why-photos img{width:100%;height:260px;object-fit:cover;border-radius:24px;box-shadow:0 7px 0 #51A8A6}
-.why-photos img:first-child{height:330px}
-.waterproof-sec{background:#F6F6F6}
-.detail-grid{display:grid;gap:24px;margin-top:64px;align-items:center}
-.detail-photo img{width:100%;max-height:440px;object-fit:cover;border-radius:24px;box-shadow:0 8px 0 #51A8A6}
-.detail-copy{padding:26px;border:1px solid rgba(81,168,166,.25);border-radius:24px;background:#fff}
-.detail-copy h3,.silo-detail-copy h3{margin:0 0 16px;color:var(--yap-abyss);font:800 clamp(28px,6vw,44px)/1.1 var(--f-display)}
-.detail-copy p:not(.section-eyebrow),.silo-detail-copy p:not(.section-eyebrow){margin:0 0 16px;line-height:1.7}
-.detail-points{padding-left:20px;margin:16px 0 24px}.detail-points li{padding:4px 0}
-.detail-copy .btn{max-width:100%}
-.silo-sec{background:var(--yap-abyss)}
-.silo-detail{display:grid;gap:28px;margin-top:64px;align-items:center}
-.silo-detail-photo img{width:100%;max-height:430px;object-fit:cover;border-radius:24px;box-shadow:0 8px 0 var(--yap-teal-site)}
-.silo-detail-copy{padding:26px;border:1px solid rgba(147,241,239,.25);border-radius:24px;background:rgba(255,255,255,.06)}
-.silo-detail-copy h3{color:#fff}.silo-detail-copy p{color:rgba(255,255,255,.86)}
-.other-sec{background:#fff}
+.why-copy,.other-copy{container-type:inline-size}
+/* mesma largura da coluna de texto dos blocos de serviço, para o título ter o mesmo tamanho */
+@media(min-width:1024px){.why-copy,.other-copy{max-width:460px}}
+.why-cta{margin-top:26px}
+.why-photos{display:grid;grid-template-columns:1.3fr 1fr;gap:12px;align-items:end}
+.why-photos .ph:first-child img{aspect-ratio:4/5}
+.why-photos .ph:last-child img{aspect-ratio:3/4}
+.other-copy .btn{margin-top:24px;max-width:100%}
 .other-services{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0;padding:0;list-style:none}
-.other-services li{display:flex;align-items:center;min-height:82px;padding:14px;border-radius:16px;background:#F6FAF9;border:1px solid rgba(81,168,166,.3);box-shadow:0 5px 0 var(--yap-teal-site);color:var(--yap-abyss);font:800 15px/1.3 var(--f-display)}
-@media(min-width:700px){.paint-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.paint-card{min-height:190px;padding:24px}.other-services{gap:16px}.other-services li{padding:20px}}
-@media(min-width:1024px){.painting-more,.detail-grid,.silo-detail{margin-top:96px}.why-grid,.other-grid{grid-template-columns:1fr 1fr;gap:64px}.why-photos img{height:400px}.why-photos img:first-child{height:500px}.detail-grid{grid-template-columns:1fr 1fr;gap:56px}.silo-detail{grid-template-columns:1fr 1fr;gap:56px}.detail-copy,.silo-detail-copy{padding:42px}.other-services li{min-height:100px}}
-@media(min-width:768px){.picks{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.other-services li{display:flex;align-items:center;min-height:72px;padding:14px;border-radius:16px;background:#fff;border:1px solid rgba(81,168,166,.25);box-shadow:0 5px 0 #51A8A6;color:var(--yap-ink);font:700 15px/1.3 var(--f-display)}
+
+/* Dobras de detalhe (impermeabilização e silos) */
+.checks{display:grid;gap:10px;margin:22px 0 0;padding:0;list-style:none}
+.checks li{display:flex;align-items:flex-start;gap:10px;font:400 15px/1.55 var(--f-body);color:var(--yap-ink)}
+.checks svg.i{flex:none;width:22px;height:22px;padding:4px;border-radius:50%;background:rgba(81,168,166,.14);color:var(--yap-teal-deep);stroke-width:2.6}
+.more-note{margin-top:22px}
+.bcard{margin-top:24px;padding:22px 20px;border-radius:24px;background:linear-gradient(262deg,#51A8A6 0%,#154241 100%);color:#fff;box-shadow:0 7px 0 0 #389593,0 22px 34px -24px rgba(15,59,58,.55)}
+.bcard h3{margin:0 0 4px;font:800 18px/1.2 var(--f-display);letter-spacing:.06em;text-transform:uppercase;color:var(--yap-aqua)}
+.bcard .checks li{color:#fff}
+.bcard .checks svg.i{background:rgba(147,241,239,.2);color:var(--yap-aqua)}
+.badge{display:inline-flex;align-items:center;gap:8px;margin:22px 0 0;padding:10px 16px;border-radius:999px;background:#0F3B3A;color:#fff;font:700 12px/1.2 var(--f-display);letter-spacing:.08em;text-transform:uppercase}
+.badge svg.i{width:18px;height:18px;color:var(--yap-aqua);stroke-width:2.4}
+
+/* Destaques de abertura (impermeabilização e silos), no padrão do hero */
+.feat{position:relative;display:flex;flex-direction:column;overflow:hidden;isolation:isolate;background:#0F3B3A;color:#fff;--wave-h:clamp(44px,7vw,104px)}
+.feat .sec-wave-top{--wave-fill:var(--wave-top);z-index:2}
+.feat .hero-wave{--wave-fill:var(--wave-bottom)}
+.feat-media{position:relative;flex:none;height:clamp(280px,50svh,520px);z-index:-2}
+.feat-media picture,.feat-media img{width:100%;height:100%}
+.feat-media img{object-fit:cover;object-position:50% 40%}
+.feat-media::after{content:'';position:absolute;inset:0 0 -2px;background:linear-gradient(180deg,rgba(15,59,58,.2) 0%,rgba(15,59,58,0) 30%,rgba(15,59,58,0) 50%,rgba(15,59,58,.85) 80%,#0F3B3A 96%)}
+.feat-wrap{z-index:1;margin-top:-28px;padding-bottom:calc(40px + var(--wave-h))}
+.feat-text{container-type:inline-size;text-shadow:0 2px 22px rgba(15,59,58,.55)}
+.feat-title{margin:0;font:900 clamp(24px,calc((100vw - 40px) / 11.4),92px)/.95 var(--f-display);font-size:clamp(24px,calc(100cqw / 11.4),92px);letter-spacing:-.03em;text-transform:uppercase;color:#fff}
+.feat-title .big{display:block}
+.feat-title .t{display:block;color:var(--yap-aqua)}
+.feat-sub{display:block;margin-top:14px;font:800 clamp(13px,3.7vw,20px)/1.35 var(--f-display);letter-spacing:.12em;color:#fff}
+.feat-lead{margin:18px 0 0;max-width:540px;font:400 15px/1.65 var(--f-body);color:rgba(255,255,255,.88)}
+.feat .tags li{background:rgba(255,255,255,.08);border-color:rgba(147,241,239,.3);color:#fff;box-shadow:0 4px 0 0 #51A8A6}
+.feat .mi{background:rgba(147,241,239,.14);color:var(--yap-aqua)}
+.feat-cta{margin-top:24px}
+.feat-cta .btn{width:100%;padding:0 16px;font-size:13px;letter-spacing:.03em}
+
+@media(min-width:700px){.paint-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.paint-tx{padding:18px 18px 20px}.paint-card h4{font-size:17px}.paint-card p{font-size:14px}.other-services{gap:16px}.other-services li{padding:20px}}
+@media(min-width:768px){
+  .picks{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .checks li{font-size:16px}
+  .bcard{padding:28px}
+  .feat{flex-direction:row;align-items:center;min-height:min(860px,92svh)}
+  .feat-media{position:absolute;top:0;bottom:0;left:40%;right:0;height:auto;-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.25) 10%,rgba(0,0,0,.75) 24%,#000 36%);mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.25) 10%,rgba(0,0,0,.75) 24%,#000 36%)}
+  .feat-media::after{background:linear-gradient(0deg,rgba(15,59,58,.55) 0%,rgba(15,59,58,0) 26%),linear-gradient(180deg,rgba(15,59,58,.45) 0%,rgba(15,59,58,0) 22%)}
+  .feat-wrap{margin-top:0;padding-top:calc(var(--wave-h) + 72px);padding-bottom:calc(var(--wave-h) + 72px)}
+  .feat-text{max-width:620px}
+  .feat-lead{font-size:17px}
+  .feat-cta .btn{width:auto;padding:0 30px;font-size:14px;letter-spacing:.04em}
+}
+@media(min-width:1024px){
+  .paint-wrap{margin-top:96px}
+  .why-grid,.other-grid{grid-template-columns:1fr 1fr;gap:64px}
+  .feat-text{max-width:600px}
+}
 @media(min-width:1200px){.picks{grid-template-columns:repeat(4,minmax(0,1fr))}}
-/* O título do hero e os títulos longos precisam quebrar dentro da coluna, sem corte. */
-.hero-title{font-size:clamp(34px,9vw,72px);line-height:1.02;max-width:13ch;overflow-wrap:normal;text-wrap:balance}
-.silo-sec .h2{font-size:clamp(25px,calc(100cqw / 10),52px);line-height:1.05;text-transform:none;overflow-wrap:break-word}
-.waterproof-sec .h2{font-size:clamp(24px,calc(100cqw / 10),52px);line-height:1.05;overflow-wrap:break-word}
-@media(min-width:768px){.hero-title{font-size:clamp(44px,5.7vw,78px);max-width:13ch}}
-@media(min-width:1024px){.hero-title{font-size:clamp(44px,4.5vw,66px);max-width:13ch}}
+
 /* Keyframes */
 @keyframes rise{0%{transform:translate3d(0,105%,0) skewY(6deg)}100%{transform:none}}
 @keyframes fadeup{0%{opacity:0;transform:translate3d(0,24px,0)}100%{opacity:1;transform:none}}
@@ -475,5 +517,6 @@ body.menu-open{overflow:hidden}
   .area-map .ping{display:none}
   .fab::before,.fab::after{display:none}
   .hero-wave .w-back,.sec-wave-top .w-back{animation:none}
+  .paint-card,.paint-ph img{transition:none}
   .js .rv{opacity:1;transform:none}
 }

@@ -166,12 +166,23 @@
   if (fab) {
     var WA = 'https://wa.me/5562981680888?text=';
     var MSG = {
+      pintura: 'Ol%C3%A1!%20Vim%20pelo%20site%20da%20YAP%20e%20quero%20um%20or%C3%A7amento%20de%20pintura%20predial.',
       impermeabilizacao: 'Ol%C3%A1!%20Vim%20pelo%20site%20da%20YAP%20e%20quero%20um%20or%C3%A7amento%20de%20impermeabiliza%C3%A7%C3%A3o.',
-      silos: 'Ol%C3%A1!%20Vim%20pelo%20site%20da%20YAP%20e%20quero%20um%20or%C3%A7amento%20de%20impermeabiliza%C3%A7%C3%A3o%20de%20silos.'
+      silos: 'Ol%C3%A1!%20Vim%20pelo%20site%20da%20YAP%20e%20quero%20um%20or%C3%A7amento%20de%20impermeabiliza%C3%A7%C3%A3o%20de%20silos.',
+      reformas: 'Ol%C3%A1!%20Vim%20pelo%20site%20da%20YAP%20e%20quero%20conversar%20sobre%20constru%C3%A7%C3%A3o%20e%20reforma.'
     };
     var LABEL = {
+      pintura: 'Falar no WhatsApp sobre pintura',
       impermeabilizacao: 'Falar no WhatsApp sobre impermeabilização',
-      silos: 'Falar no WhatsApp sobre impermeabilização de silos'
+      silos: 'Falar no WhatsApp sobre impermeabilização de silos',
+      reformas: 'Falar no WhatsApp sobre construção e reforma'
+    };
+    /* seção visível → serviço da mensagem */
+    var SEC = {
+      'pintura-predial': 'pintura', 'por-que-yap': 'pintura',
+      'impermeabilizacao': 'impermeabilizacao', 'impermeabilizacao-detalhes': 'impermeabilizacao',
+      'silos': 'silos', 'silos-detalhes': 'silos',
+      'outros-servicos': 'reformas'
     };
     var heroEl = doc.getElementById('inicio'), ctaEl = doc.getElementById('contato');
     var secs = doc.querySelectorAll('main > section:not([hidden])');
@@ -184,7 +195,7 @@
       var svc = '';
       for (var m = 0; m < secs.length; m++) {
         var r = secs[m].getBoundingClientRect();
-        if (r.top <= h / 2 && r.bottom >= h / 2) { svc = secs[m].id; break; }
+        if (r.top <= h / 2 && r.bottom >= h / 2) { svc = SEC[secs[m].id] || ''; break; }
       }
       fab.classList.toggle('is-off', !!off);
       fab.setAttribute('tabindex', off ? '-1' : '0');
