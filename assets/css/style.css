@@ -386,6 +386,8 @@ body.menu-open{overflow:hidden}
   .pick-txt{align-items:center;gap:10px}
   .pick-txt b{font-size:clamp(19px,1.8vw,23px)}
   .pick-arr{display:none}
+  .pick-txt{flex:1}
+  .pick-txt small{margin-top:auto}
 }
 @media(min-width:1024px){
   .cta-final .wrap{text-align:center}
