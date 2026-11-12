@@ -408,6 +408,8 @@ body.menu-open{overflow:hidden}
 @media(hover:hover){.ft-col a:hover{color:var(--yap-aqua)}}
 .ft-base{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;margin-top:48px;padding-top:24px;border-top:1px solid rgba(147,241,239,.18);font:400 13px/1.5 var(--f-body)}
 .ft-base p{margin:0}
+.ft-dev a{color:var(--yap-aqua);font-weight:600;text-decoration:none;border-bottom:1px solid rgba(147,241,239,.4);transition:border-color .2s}
+.ft-dev a:hover,.ft-dev a:focus-visible{border-bottom-color:var(--yap-aqua)}
 .ft-top{display:inline-flex;align-items:center;gap:8px;min-height:40px;color:#fff;text-decoration:none;font:700 13px/1 var(--f-display);letter-spacing:.06em;text-transform:uppercase}
 .ft-top svg.i{width:16px;height:16px;transform:rotate(-90deg)}
 
