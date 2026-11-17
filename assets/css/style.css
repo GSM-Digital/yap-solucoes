@@ -464,7 +464,7 @@ body.menu-open{overflow:hidden}
 .why-cta{margin-top:26px}
 .why-photos{display:grid;grid-template-columns:1.3fr 1fr;gap:12px;align-items:end}
 .why-photos .ph:nth-child(2) img{aspect-ratio:4/5}
-.why-photos .ph-wide img{aspect-ratio:2/1;object-position:50% 18%}
+.why-photos .ph-wide img{aspect-ratio:16/10;object-position:50% 50%}
 .why-photos .ph:last-child img{aspect-ratio:3/4}
 .other-copy .btn{margin-top:24px;max-width:100%}
 .other-services{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0;padding:0;list-style:none}
