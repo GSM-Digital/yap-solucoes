@@ -161,7 +161,7 @@ body.menu-open{overflow:hidden}
   .hero{flex-direction:row;align-items:flex-end;min-height:100vh;min-height:100svh;background:#0F3B3A}
   .hero-media{position:absolute;top:-6%;bottom:-6%;left:38%;right:0;height:auto;-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.25) 10%,rgba(0,0,0,.75) 24%,#000 36%);mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.25) 10%,rgba(0,0,0,.75) 24%,#000 36%)}
   .hero-media::after{background:linear-gradient(0deg,rgba(15,59,58,.7) 0%,rgba(15,59,58,0) 26%),linear-gradient(180deg,rgba(15,59,58,.45) 0%,rgba(15,59,58,0) 16%)}
-  .hero-media img{object-position:10% 30%}
+  .hero-media img{object-position:62% 30%}
   .hero-wrap{margin-top:0}
   .hero-deco{top:0;right:56%;-webkit-mask-image:linear-gradient(90deg,#000 70%,transparent);mask-image:linear-gradient(90deg,#000 70%,transparent)}
   .hero-word{left:-.04em;right:auto;top:50%;margin-top:-.52em;font-size:clamp(300px,40vw,640px);-webkit-text-stroke-width:2px}
