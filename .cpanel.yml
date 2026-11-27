@@ -4,4 +4,5 @@ deployment:
     - export DEPLOYPATH=/home1/yapnet60/servicos.yapsolucoes.com.br
     - /bin/mkdir -p "$DEPLOYPATH/assets"
     - /bin/cp index.html "$DEPLOYPATH/index.html"
+    - /bin/cp .htaccess "$DEPLOYPATH/.htaccess"
     - /bin/cp -R assets/. "$DEPLOYPATH/assets/"
