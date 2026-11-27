@@ -569,3 +569,10 @@ body.menu-open{overflow:hidden}
   .paint-card,.paint-ph img{transition:none}
   .js .rv{opacity:1;transform:none}
 }
+
+/* Telas muito largas (monitores widescreen, 4K e TVs): o conteúdo do .wrap cresce
+   em proporção para não virar uma coluna estreita no meio da tela. Fotos de fundo
+   e faixas em largura total continuam no tamanho real da viewport. */
+@media(min-width:1800px){.wrap{zoom:1.15}}
+@media(min-width:2400px){.wrap{zoom:1.5}}
+@media(min-width:3400px){.wrap{zoom:2}}

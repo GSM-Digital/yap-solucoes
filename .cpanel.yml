@@ -5,4 +5,5 @@ deployment:
     - /bin/mkdir -p "$DEPLOYPATH/assets"
     - /bin/cp index.html "$DEPLOYPATH/index.html"
     - /bin/cp .htaccess "$DEPLOYPATH/.htaccess"
+    - /bin/cp robots.txt sitemap.xml llms.txt llm.txt favicon.ico "$DEPLOYPATH/"
     - /bin/cp -R assets/. "$DEPLOYPATH/assets/"

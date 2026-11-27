@@ -10,10 +10,19 @@
   /* Header: fica sólido quando o topo do hero sai da tela */
   var hdr = doc.getElementById('hdr');
   var hero = doc.getElementById('inicio');
+  /* A altura do hero fica em cache: ler offsetHeight a cada rolagem força reflow */
+  var heroH = 0;
+  function measureHero() { heroH = hero ? hero.offsetHeight : 0; }
   function setSolid() {
     if (!hdr) return;
-    var limit = hero ? Math.max(60, hero.offsetHeight * 0.12) : 60;
+    var limit = Math.max(60, heroH * 0.12);
     hdr.classList.toggle('is-solid', window.pageYOffset > limit);
+  }
+  if (hero && 'ResizeObserver' in window) {
+    new ResizeObserver(function () { measureHero(); setSolid(); }).observe(hero);
+  } else {
+    window.addEventListener('resize', function () { measureHero(); setSolid(); }, { passive: true });
+    measureHero();
   }
 
   /* Menu do celular */

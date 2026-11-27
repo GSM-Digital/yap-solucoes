@@ -1,4 +1,85 @@
+# YAP Soluções · servicos.yapsolucoes.com.br (Apache/cPanel)
+# Fonte única dos cabeçalhos de segurança, cache e compressão da LP.
+
+Options -Indexes
+
+# ---------------------------------------------------------------------------
+# HTTPS
+# ---------------------------------------------------------------------------
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^servicos\.yapsolucoes\.com\.br$ [NC]
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://servicos.yapsolucoes.com.br%{REQUEST_URI} [R=301,L]
+
+# ---------------------------------------------------------------------------
+# Tipos de arquivo
+# ---------------------------------------------------------------------------
+AddDefaultCharset utf-8
+AddCharset utf-8 .html .css .js .txt .xml .json
+<IfModule mod_mime.c>
+  AddType image/webp .webp
+  AddType image/avif .avif
+  AddType font/woff2 .woff2
+  AddType image/svg+xml .svg
+  AddType text/plain .txt
+  AddType application/xml .xml
+</IfModule>
+
+# ---------------------------------------------------------------------------
+# Segurança
+# CSP: os hashes sha256 do script do GTM e do <style> do index.html são
+# gerados por tools/atualizar-csp.py. Rode o script sempre que mudar esses
+# blocos inline; sem isso o navegador bloqueia o GTM ou o CSS da página.
+# Webhook: nenhum formulário envia dados hoje. Ao criar um, inclua a origem
+# HTTPS exata do endpoint em connect-src (o servidor também precisa de CORS).
+# ---------------------------------------------------------------------------
+<IfModule mod_headers.c>
+  Header always set Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; upgrade-insecure-requests; script-src 'self' 'sha256-zvB8OlqUw5GRA0c+o0sscJVjRP7YUw06Y2h8ozK67+s=' https://www.googletagmanager.com https://tagmanager.google.com https://www.googleadservices.com https://www.google.com https://googleads.g.doubleclick.net https://www.youtube.com; style-src 'self' 'sha256-6Kno98KIyvw8Zf7auGQnMxiKwajBBv8pEtgF7Wv1zWo=' https://www.googletagmanager.com https://tagmanager.google.com https://fonts.googleapis.com; img-src 'self' data: https://www.googletagmanager.com https://ssl.gstatic.com https://www.gstatic.com https://*.google-analytics.com https://*.analytics.google.com https://*.g.doubleclick.net https://ad.doubleclick.net https://www.googleadservices.com https://pagead2.googlesyndication.com https://*.google.com https://*.google.com.br https://i.ytimg.com; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://*.g.doubleclick.net https://ad.doubleclick.net https://www.googleadservices.com https://pagead2.googlesyndication.com https://*.google.com https://*.google.com.br; frame-src https://www.googletagmanager.com https://td.doubleclick.net https://www.youtube-nocookie.com https://www.youtube.com; media-src 'self'; manifest-src 'self'; worker-src 'self'"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+  Header always set Strict-Transport-Security "max-age=31536000" "expr=%{HTTPS} == 'on'"
+  Header unset X-Powered-By
+</IfModule>
+
+# ---------------------------------------------------------------------------
+# Cache
+# CSS e JS têm versão na URL (?v=); imagens e fontes ganham nome novo quando
+# mudam. Por isso podem ficar um ano em cache. O HTML sempre revalida.
+# ---------------------------------------------------------------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 hour"
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/avif "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType text/plain "access plus 1 day"
+  ExpiresByType application/xml "access plus 1 day"
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch "\.html?$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+  <FilesMatch "\.(css|js|webp|avif|jpe?g|png|svg|ico|woff2)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>
+
+# ---------------------------------------------------------------------------
+# Compressão
+# ---------------------------------------------------------------------------
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/css text/plain text/xml application/xml application/javascript text/javascript application/json application/ld+json image/svg+xml
+</IfModule>
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/xml application/javascript text/javascript application/json application/ld+json image/svg+xml
+</IfModule>
